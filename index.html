@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">
+          Let us know how we can improve our website.
+        </p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="exampleInputEmail1"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              name="exampleInputEmail1"
+              id="email"
+              placeholder="Enter your email"
+              aria-describedby="emailHelp"
+              required
+            />
+            <small id="emailHelp" class="form-text"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input
+              type="number"
+              name="age"
+              class="form-control"
+              id="number"
+              placeholder="Age"
+              min="12"
+              max="100"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="dropdown"
+              >Which option best describes your current occupation?</label
+            >
+            <select
+              class="form-control"
+              name="occupation"
+              id="dropdown"
+              required
+            >
+              <option disabled selected value>Select</option>
+              <option>Full time</option>
+              <option>Part time</option>
+              <option>Self employed</option>
+              <option>Student</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p style="margin-bottom: 8px;">How did you find our website?</p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="Radios"
+                id="Radios1"
+                value="Search-engine"
+                checked
+              />
+              <label class="form-check-label" for="Radios1">
+                Search engine
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="Radios"
+                id="Radios2"
+                value="Social-network"
+              />
+              <label class="form-check-label" for="Radios2">
+                Social network
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="Radios"
+                id="Radios3"
+                value="Advertisement"
+              />
+              <label class="form-check-label" for="Radios3">
+                Advertisement
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="Radios"
+                id="Radios4"
+                value="Other"
+              />
+              <label class="form-check-label" for="Radios4">
+                Other
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <p style="margin-bottom: 8px;">
+              Things that you think should be improved (Check all that apply)
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="load-speed"
+                id="Check1"
+              />
+              <label class="form-check-label" for="Check1">
+                Load Speed
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="design"
+                id="Check2"
+              />
+              <label class="form-check-label" for="Check2">
+                Design
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="forum"
+                id="Check3"
+              />
+              <label class="form-check-label" for="Check3">
+                Forum
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="FormControlTextarea1"
+              >Any comments or suggestions?</label
+            >
+            <textarea
+              class="form-control"
+              id="FormControlTextarea1"
+              rows="4"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <button
+            id="submit"
+            type="submit"
+            class="btn btn-lg btn-success btn-outline-dark"
+          >
+            Submit
+          </button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

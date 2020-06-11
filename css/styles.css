@@ -1,0 +1,29 @@
+body {
+  font-family: cursive, sans-serif;
+  letter-spacing: 0.1rem;
+  color: white;
+  background-image: url(https://i2.wp.com/background4free.com/download/blue_yellow_light_115379772.jpg?q=100);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  background-color: rgba(51, 10, 46, 0.781);
+  border-radius: 3px;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 10px black;
+}
+
+.btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 10px black;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
